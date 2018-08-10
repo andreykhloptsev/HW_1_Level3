@@ -1,6 +1,8 @@
 package ru.geekbrains.level_3.hw1.Task3;
 
 
+import java.util.ArrayList;
+
 public class MainClassTask3 {
 
     public static void main(String[] args) {
@@ -11,13 +13,19 @@ public class MainClassTask3 {
         Orange orange1 = new Orange();
         Orange orange2 = new Orange();
         Orange orange3 = new Orange();
-        Box<Fruit> box = new Box<>();
-        Box<Apple> box1 = new Box<>();
+        Box<Apple> box = new Box<>();
+        Box<Orange> box1 = new Box<>();
+        Box<Apple> box2 = new Box<>();
         //если создавать коробку определенного типа то класть другой тип нельзя
         //как определять тип коробки по уже положенному не разобрался
         box.put(apple1);
-        box.put(orange1);
-        box1.put(orange2);
+        box.put(apple2);
+        box.put(apple1);
+        box2.put(apple3);
+        box1.put(orange1);
+        box.shift(box2);
+        box.compare(box1);
+
 
 
 
